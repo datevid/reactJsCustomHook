@@ -3,7 +3,7 @@
 Proyecto que permite customizar
 
 Before:
-```
+```javascript
 function App() {
 
   const [stateBtn, setStateBtn] = useState(false)
@@ -29,7 +29,7 @@ export default App
 ```
 
 After
-```
+```javascript
 function useStateFn() {
   const [stateBtn, setStateBtn] = useState(false)
 
