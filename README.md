@@ -39,9 +39,15 @@ function useStateFn() {
   }
   return {stateBtn, handleClick}
 }
+
 function App() {
 
-  const {stateBtn,handleClick}=useStateFn()
+  const [stateBtn, setStateBtn] = useState(false)
+
+  const handleClick = () => {
+    setStateBtn(!stateBtn)
+    console.log(stateBtn)
+  }
 
   return (
     <div className="App">
